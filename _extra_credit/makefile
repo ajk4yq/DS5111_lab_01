@@ -8,13 +8,13 @@ raven_lines.txt:
 	cat pg1065.txt | grep -i 'raven' > raven_lines.txt
 
 number_of_Raven.txt:
-	cat pg1065.txt | grep 'Raven' | wc -l > number_of_Raven.txt
+	cat raven_lines.txt | grep 'Raven' | wc -l > number_of_Raven.txt
 
 number_of_RAVEN.txt:
-	cat pg1065.txt | grep 'RAVEN' | wc -l > number_of_RAVEN.txt
+	cat raven_lines.txt | grep 'RAVEN' | wc -l > number_of_RAVEN.txt
 
 number_of_raven.txt:
-	cat pg1065.txt | grep 'raven' | wc -l > number_of_raven.txt
+	cat raven_lines.txt | grep 'raven' | wc -l > number_of_raven.txt
 
 .PHONY: all clean
 all: pg1065.txt raven_lines.txt number_of_RAVEN.txt number_of_Raven.txt number_of_raven.txt
